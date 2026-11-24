@@ -1,0 +1,36 @@
+{
+  "name": "algebramania",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AlgebraMania: a computer algebra system with step-by-step solutions",
+  "type": "module",
+  "bin": {
+    "am": "dist/cli.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsx tools/lint.ts",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm run lint && npm test",
+    "reference": "python tools/reference/gen_fixtures.py",
+    "am": "tsx src/cli.ts"
+  },
+  "dependencies": {
+    "better-sqlite3": "12.11.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^24.19.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.1"
+  },
+  "allowScripts": {
+    "better-sqlite3@12.11.1": true,
+    "esbuild@0.28.2": true
+  }
+}
