@@ -16,7 +16,7 @@ npm install
 npm run check
 ```
 
-`npm run check` runs the typecheck, lint and test gates. CI runs the same three steps.
+`npm run check` runs the typecheck, lint and test gates.
 
 On machines where npm skips install scripts, approve and rebuild the native packages:
 
