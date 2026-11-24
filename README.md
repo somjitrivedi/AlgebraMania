@@ -84,19 +84,3 @@ npm run reference
 ```
 
 `npm run reference` regenerates `test/fixtures/reference-parse.json` from SymPy. It holds 150 handwritten inputs and 450 seeded random inputs, each evaluated at three points. The tests check that this parser computes the same values as SymPy at every point, which tests the parser against an independent implementation.
-
-## Roadmap
-
-| # | Phase | Status |
-|---|---|---|
-| 0 | Foundation | done |
-| 1 | Expression trees, parser, printers | done |
-| 2 | Exact arithmetic (BigInt rationals, BigFloat) | |
-| 3 | Canonical simplification and rewrite rules | |
-| 4 | Differentiation with steps | |
-| 5 | Polynomial algebra and factoring | |
-| 6 | Equation solving | |
-| 7 | Heuristic integration with steps | |
-| 8 | Risch-lite integration | |
-| 9 | Web app | |
-| 10 | Hardening, limits and series | |
